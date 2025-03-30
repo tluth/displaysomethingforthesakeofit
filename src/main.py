@@ -36,3 +36,7 @@ def main() -> None:
         lcd.clear()
         exit()
         print("Disconnected.")
+
+
+if __name__ == "__main__":
+    main()
