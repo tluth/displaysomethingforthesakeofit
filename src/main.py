@@ -9,14 +9,13 @@ HUMIDITY_UID = "C1g"
 TEMP_UID = "zEG"
 
 def main() -> None:
-
     try:
         print("Connected to Masterbrick. Displaying readings on LCD...")
         lcd = lcd_init()
         
         while True:
             sensor_data = get_humidity_temperature_readings(MASTERBRICK_HOST, MASTERBRICK_PORT, HUMIDITY_UID, TEMP_UID)
-
+            print(sensor_data)
             # Format display text
             temp_text = f"Temp: {sensor_data['temperature']:.1f}C"
             hum_text = f"Hum: {sensor_data['humidity']:.1f}%"
