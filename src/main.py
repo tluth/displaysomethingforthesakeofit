@@ -18,8 +18,8 @@ def main() -> None:
             sensor_data = get_humidity_temperature_readings(MASTERBRICK_HOST, MASTERBRICK_PORT, HUMIDITY_UID, TEMP_UID)
 
             # Format display text
-            temp_text = f"Temp: {sensor_data["temperature"]:.1f}C"
-            hum_text = f"Hum: {sensor_data["humidity"]:.1f}%"
+            temp_text = f"Temp: {sensor_data['temperature']:.1f}C"
+            hum_text = f"Hum: {sensor_data['humidity']:.1f}%"
 
             # Print to LCD
             lcd.cursor_pos = (0, 0)
