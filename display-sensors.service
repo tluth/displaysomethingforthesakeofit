@@ -1,0 +1,14 @@
+[Unit]
+Description=LCD Clock Service
+After=network-online.target multi-user.target
+
+[Service]
+User=pi
+type=simple
+WorkingDirectory=/home/pi/displaysomethingforthesakeofit
+ExecStart=/usr/bin/make -C /home/pi/displaysomethingforthesakeofit run_main
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

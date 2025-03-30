@@ -12,3 +12,9 @@ status:
 
 enable:
 	systemctl enable co2-monitor
+
+deps:
+	. .venv/bin/activate
+
+run_main:
+	. .venv/bin/activate && cd src && python main.py
