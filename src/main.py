@@ -3,7 +3,7 @@ import time
 from sensors import get_humidity_temperature_readings
 from display import lcd_init
 
-MASTERBRICK_HOST = "192.168.1.2"
+MASTERBRICK_HOST = "192.168.1.4"
 MASTERBRICK_PORT = 4223
 HUMIDITY_UID = "C1g"
 TEMP_UID = "zEG"
