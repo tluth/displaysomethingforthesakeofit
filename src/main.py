@@ -21,7 +21,7 @@ def main() -> None:
             # Format display text
             temp_text = f"{sensor_data['temperature']:.1f}C | "
             hum_text = f"{sensor_data['humidity']:.1f}% hum"
-            co2_text = f"CO2: {sensor_data["co2"]} ppm"
+            co2_text = f"CO2: {sensor_data['co2']} ppm"
 
             # Print to LCD
             lcd.cursor_pos = (0, 0)
